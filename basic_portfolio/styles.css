@@ -1,0 +1,291 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #121212; /* Dark background for a sleek look */
+    color: #e0e0e0; /* Light gray text for contrast */
+    line-height: 1.6;
+}
+
+h1, h2, p {
+    color: #e0e0e0; /* Light gray text */
+    margin-bottom: 20px;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Navigation Bar */
+nav {
+    background: #333333; /* Darker shade for the navigation bar */
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 30px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ff4081; /* Pink accent on hover */
+}
+
+/* About Me Section */
+#about-me {
+    background: #1e1e1e; /* Dark background to contrast the text */
+    text-align: center;
+    padding: 80px 0;
+    color: #fff;
+    border-bottom: 1px solid #444;
+}
+
+#about-me h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+#about-me p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    max-width: 800px;
+    margin: 0 auto;
+    font-weight: 400;
+    color: #b0b0b0; /* Light gray text for a softer look */
+}
+
+#about-me img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 5px solid #333;
+    margin-top: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+#about-me img:hover {
+    transform: scale(1.1); /* Image zoom effect */
+}
+
+/* Projects Section */
+#projects {
+    background: #181818; /* Dark background for contrast */
+    padding: 100px 0;
+    text-align: center;
+}
+
+#projects h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #fff;
+}
+
+.carousel {
+    position: relative;
+    max-width: 900px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 15px;
+    background-color: #222; /* Darker background for carousel */
+}
+
+.carousel-item {
+    display: none;
+    text-align: center;
+}
+
+.carousel-item.active {
+    display: block;
+}
+
+.carousel img {
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.carousel img:hover {
+    transform: scale(1.05); /* Image zoom effect */
+}
+
+.carousel button {
+    background-color: #444; /* Dark button background */
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 50%;
+    font-size: 18px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    z-index: 1;
+    transition: background-color 0.3s ease;
+}
+
+.carousel button:hover {
+    background-color: #ff4081; /* Pink accent on button hover */
+}
+
+.carousel .prev {
+    left: 10px;
+}
+
+.carousel .next {
+    right: 10px;
+}
+
+/* Skills Section */
+#skills {
+    background: #1e1e1e; /* Dark background */
+    padding: 80px 0;
+}
+
+#skills h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    text-align: center;
+    color: #fff;
+}
+
+#skills ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+#skills li {
+    background-color: #333; /* Dark gray background for skills */
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-align: center;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+#skills li:hover {
+    transform: translateY(-5px);
+    background-color: #ff4081; /* Pink accent on hover */
+}
+
+/* Contact Section */
+#contact {
+    background: #333333; /* Dark background */
+    color: white;
+    text-align: center;
+    padding: 80px 0;
+}
+
+#contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+#contact form {
+    margin-top: 30px;
+}
+
+#contact input, #contact textarea {
+    width: 80%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #444;
+    font-size: 1.1rem;
+    background-color: #222;
+    color: #fff;
+}
+
+#contact button {
+    background-color: #302e32; /* Pink button background */
+    color: white;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#contact button:hover {
+    background-color: #f63283; /* Lighter pink for hover effect */
+}
+
+#contact .social-links {
+    margin-top: 40px;
+}
+
+#contact .social-links a {
+    color: white;
+    margin: 0 20px;
+    font-size: 1.5rem;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+#contact .social-links a:hover {
+    color: #ff4081; /* Pink accent on social media links hover */
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    nav ul li {
+        margin: 0 15px;
+    }
+
+    #skills ul {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #skills li {
+        font-size: 1rem;
+    }
+
+    #contact input, #contact textarea {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    #skills ul {
+        grid-template-columns: 1fr;
+    }
+
+    #contact input, #contact textarea {
+        width: 100%;
+    }
+}
